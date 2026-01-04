@@ -6,46 +6,46 @@
     <title>Photo Gallery | Samarasa Sanmarga Sangam</title>
     
     <meta property="og:title" content="Samarasa Sanmarga Sangam - Established 1914">
-    <meta property="og:description" content="Glimpses of our 100-year journey in preserving Tamil literature.">
-    <meta property="og:image" content="https://samarasasanmargasangam.org.in/cover.png">
+    <meta property="og:description" content="Preserving Tamil literature and community heritage since 1914. Explore our journey.">
+    <meta property="og:image" content="https://samarasasanmargasangam.org.in/images/cover.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_76097e1694f44773d49f697475355a"></script>
 
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.6; background-color: #fcfcfc; }
-        
         .navbar { border-bottom: 3px solid #f39c12; }
         .nav-link { font-weight: 500; text-transform: uppercase; font-size: 0.9rem; margin: 0 10px; }
-
         .page-header {
-            background: linear-gradient(rgba(0, 74, 153, 0.8), rgba(0, 74, 153, 0.8)), url('cover.png');
+            background: linear-gradient(rgba(0, 74, 153, 0.85), rgba(0, 74, 153, 0.85)), url('images/cover.png');
             background-size: cover;
             background-position: center;
             color: white;
-            padding: 100px 0;
+            padding: 80px 0;
             text-align: center;
         }
-
-        /* Gallery Styling */
         .gallery-container img {
             width: 100%;
-            height: 250px;
+            height: 220px;
             object-fit: cover;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
             border: 1px solid #ddd;
+            margin-bottom: 5px;
         }
-
         .gallery-container img:hover {
-            transform: scale(1.05);
+            transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.15);
         }
-
-        .img-caption { font-size: 0.95rem; color: #555; margin-top: 10px; margin-bottom: 30px; font-weight: 600; }
-
-        /* Share & Reaction Section */
+        .img-caption { font-size: 0.85rem; color: #555; margin-bottom: 30px; font-weight: 600; }
+        h3.section-title { 
+            font-weight: 700; 
+            color: #004a99; 
+            border-left: 5px solid #f39c12; 
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
         .interaction-box {
             background: #fff;
             padding: 40px;
@@ -53,7 +53,6 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             margin-top: 50px;
         }
-
         .share-btn {
             display: inline-flex;
             align-items: center;
@@ -67,8 +66,7 @@
         }
         .whatsapp { background-color: #25D366; }
         .facebook { background-color: #1877F2; }
-        .share-btn:hover { opacity: 0.8; transform: translateY(-2px); }
-
+        .share-btn:hover { opacity: 0.8; transform: scale(1.05); }
         .footer { background: #212529; color: #bbb; padding: 60px 0 20px; margin-top: 50px; }
         .footer h5 { color: white; margin-bottom: 20px; }
         .footer a { color: #bbb; text-decoration: none; }
@@ -79,9 +77,6 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">SAMARASA SANMARGA SANGAM</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -96,37 +91,72 @@
 
     <header class="page-header">
         <div class="container">
-            <h1 class="display-4 fw-bold">Photo Gallery</h1>
-            <p class="lead">Glimpses of our 100-Year Journey</p>
+            <h1 class="display-4 fw-bold">Heritage Gallery</h1>
+            <p class="lead">Exploring over a century of literature, service, and community.</p>
         </div>
     </header>
 
     <main class="container my-5">
-        
         <div class="row justify-content-center mb-5">
-            <div class="col-md-9 text-center">
-                <p class="lead italic">
-                    In <strong>1914</strong>, the <strong>Samarasa Sanmarga Sangam</strong> was established as a collective effort by the village community, initiated by the visionary <strong>Pu. Pa. Masilamani Mudaliar</strong>. They came together to build a <strong>community library</strong> to preserve the intellectual wealth of <strong>Tamil literature</strong>.
+            <div class="col-md-10 text-center">
+                <p class="lead" style="font-style: italic;">
+                    Founded in <strong>November 1914</strong>, the Sangam has preserved the intellectual wealth of <strong>Tamil literature</strong> for generations. From welcoming <strong>Pandit Jawaharlal Nehru in 1936</strong> to the recent digitization of <strong>172 rare books</strong>, this gallery documents our enduring journey.
                 </p>
             </div>
         </div>
 
+        <h3 class="section-title">Foundation & Historical Honors</h3>
         <div class="row gallery-container">
             <div class="col-md-4 col-sm-6">
-                <img src="cover.png" alt="Library Main Building" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)">
-                <p class="text-center img-caption">The Main Library Building</p>
+                <img src="images/Registration.jpeg" alt="Registration Certificate" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)">
+                <p class="text-center img-caption">Sangam Registration</p>
             </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="images/Nehru_Visit.jpeg" alt="Nehru Visit Address" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)">
+                <p class="text-center img-caption">Welcome to Pandit Nehru (1936)</p>
             </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="images/cover.png" alt="Main Building" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)">
+                <p class="text-center img-caption">The Main Library Facade</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Ancient Books & Collections</h3>
+        <div class="row gallery-container">
+            <div class="col-md-4 col-sm-6">
+                <img src="images/Collection_1.jpeg" alt="Book Stand" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)">
+                <p class="text-center img-caption">Library Book Archives</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="images/BalaMurugan_Temple.jpeg" alt="Bala Murugan Idle" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)">
+                <p class="text-center img-caption">Bala Murugan Temple (Inside)</p>
+            </div>
+        </div>
+
+        <h3 class="section-title">Press Archive</h3>
+        <div class="row gallery-container">
+            <div class="col-md-4 col-sm-6"><img src="images/news_cut_2.jpeg" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)"><p class="text-center img-caption">Dinamani (2015)</p></div>
+            <div class="col-md-4 col-sm-6"><img src="images/news_cut_3.jpeg" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)"><p class="text-center img-caption">Dina Thanthi</p></div>
+            <div class="col-md-4 col-sm-6"><img src="images/news_cut_4.jpeg" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)"><p class="text-center img-caption">The Hindu</p></div>
+        </div>
+
+        <h3 class="section-title">Community Service & Meetings</h3>
+        <div class="row gallery-container">
+            <div class="col-md-3 col-sm-6"><img src="images/Meet_old1.jpeg" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)"><p class="text-center img-caption">Archive (Circa 1956)</p></div>
+            <div class="col-md-3 col-sm-6"><img src="images/Event_Archive_1.jpeg" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)"><p class="text-center img-caption">Social Service</p></div>
+            <div class="col-md-3 col-sm-6"><img src="images/New_Meet_1.jpeg" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)"><p class="text-center img-caption">Meeting (2022)</p></div>
+            <div class="col-md-3 col-sm-6"><img src="images/New_Meet_2.jpeg" data-bs-toggle="modal" data-bs-target="#imgModal" onclick="updateModal(this)"><p class="text-center img-caption">Recent Gathering</p></div>
+        </div>
 
         <div class="interaction-box text-center">
             <div class="row">
                 <div class="col-md-6 border-end">
-                    <h5>Show your support</h5>
-                    <div data-lyket-type="clap" data-lyket-id="sangam-gallery" data-lyket-namespace="website" data-lyket-color="#f39c12"></div>
+                    <h5>Support our Heritage</h5>
+                    <div data-lyket-type="clap" data-lyket-id="sangam-gallery-main" data-lyket-namespace="website" data-lyket-color="#f39c12"></div>
                 </div>
                 <div class="col-md-6">
-                    <h5>Spread the Word</h5>
-                    <a href="https://api.whatsapp.com/send?text=Discover the history of Samarasa Sanmarga Sangam (Est. 1914): https://samarasasanmargasangam.org.in" target="_blank" class="share-btn whatsapp">WhatsApp</a>
+                    <h5>Share with the World</h5>
+                    <a href="https://api.whatsapp.com/send?text=Explore the 100-year history of Samarasa Sanmarga Sangam: https://samarasasanmargasangam.org.in" target="_blank" class="share-btn whatsapp">WhatsApp</a>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://samarasasanmargasangam.org.in" target="_blank" class="share-btn facebook">Facebook</a>
                 </div>
             </div>
@@ -135,9 +165,9 @@
 
     <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-transparent border-0">
+            <div class="modal-content bg-transparent border-0 text-center">
                 <div class="modal-body p-0">
-                    <img src="" id="modalImg" class="img-fluid rounded shadow">
+                    <img src="" id="modalImg" class="img-fluid rounded shadow" style="max-height: 90vh;">
                 </div>
             </div>
         </div>
@@ -148,24 +178,41 @@
             <div class="row">
                 <div class="col-md-5 mb-4">
                     <h5>Samarasa Sanmarga Sangam</h5>
-                    <p>Preserving Tamil literature and community heritage since 1914. A pillar of the Thiruvannamalai District.</p>
+                    <p>A premier charitable trust and historical library dedicated to the preservation of Tamil literature since 1914.</p>
+                    <p class="small opacity-75">
+                        Established on November 27, 1914, through the collective efforts of the Pudupalayam village community.
+                    </p>
                 </div>
                 <div class="col-md-3 mb-4">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="about.html">About the Trust</a></li>
+                        <li><a href="collection.html">Our Collection</a></li>
                         <li><a href="gallery.html">Photo Gallery</a></li>
-                        <li><a href="mailto:samarasasanmargasangamlibrary@gmail.com">Contact Us</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 mb-4 text-md-end">
-                    <h5>Visitor Count</h5>
-                    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fsamarasasanmargasangam.org.in&count_bg=%23f39c12&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visits&edge_flat=false" alt="Hits"/>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>
+                        <strong>Samarasa Sanmarga Sangam Library</strong><br>
+                        Pudupalayam Village and Post<br>
+                        via Dusi & Mamandoor, Vembakkam Taluk<br>
+                        Tiruvannamalai District - 631702
+                    </p>
+                    <p>
+                        <strong>Email:</strong> <a href="mailto:samarasasanmargasangamlibrary@gmail.com">samarasasanmargasangamlibrary@gmail.com</a><br>
+                        <strong>Mobile/WhatsApp:</strong> <a href="https://wa.me/919442261067" target="_blank">+91 9442261067</a>
+                    </p>
+                    <div class="mt-3">
+                        <h6 class="text-white small">Total Visits</h6>
+                        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fsamarasasanmargasangam.org.in&count_bg=%23f39c12&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visits&edge_flat=false" alt="Visitor Count"/>
+                    </div>
                 </div>
             </div>
             <hr class="bg-secondary">
             <div class="text-center pt-3">
-                <p class="small mb-0">© 2026 Samarasa Sanmarga Sangam. Registered Non-Profit Organization.</p>
+                <p class="small mb-0 opacity-75">© 2026 Samarasa Sanmarga Sangam Charitable Trust. <br>Designed and Developed by Ganeshram Madhavan.</p>
             </div>
         </div>
     </footer>
